@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="940" viewBox="0 0 800 940" fill="none">
+  <rect width="800" height="940" fill="#D9DFDA"/>
+  <path d="M0 0h800v940H0z" fill="#E5E8E1"/>
+  <path d="M0 0h800v940H0z" fill="url(#wash)"/>
+  <g opacity=".33" stroke="#79918B">
+    <path d="M80 0v940M160 0v940M240 0v940M320 0v940M400 0v940M480 0v940M560 0v940M640 0v940M720 0v940"/>
+    <path d="M0 80h800M0 160h800M0 240h800M0 320h800M0 400h800M0 480h800M0 560h800M0 640h800M0 720h800M0 800h800M0 880h800"/>
+  </g>
+  <rect x="36" y="36" width="728" height="868" stroke="#718681" stroke-width="2"/>
+  <path d="M307 283c0-66 42-112 94-112s94 46 94 112v91H307v-91Z" fill="#BCC9C1"/>
+  <path d="M234 821c14-188 72-293 167-293s153 105 167 293H234Z" fill="#BAC7BF"/>
+  <path d="M285 410c0-96 47-156 116-156s116 60 116 156-47 169-116 169-116-73-116-169Z" fill="#D2DAD3"/>
+  <path d="M281 388c-2-93 44-160 120-160 67 0 110 56 113 143-24-9-42-30-54-60-30 30-92 49-179 45Z" fill="#778C84"/>
+  <path d="M319 410h31M433 410h31" stroke="#718681" stroke-width="6" stroke-linecap="round"/>
+  <path d="M372 468c16 12 35 12 52 0" stroke="#718681" stroke-width="5" stroke-linecap="round"/>
+  <path d="M363 531v52M437 531v52" stroke="#718681" stroke-width="3"/>
+  <path d="M260 821c15-112 71-184 140-184s125 72 140 184H260Z" fill="#82978E"/>
+  <rect x="282" y="691" width="236" height="2" fill="#E5E8E1"/>
+  <text x="400" y="745" text-anchor="middle" fill="#F5F4EF" font-family="Arial, sans-serif" font-size="16" letter-spacing="5">ISHITA VERMA</text>
+  <rect x="257" y="837" width="286" height="36" fill="#F5F4EF"/>
+  <text x="400" y="860" text-anchor="middle" fill="#344740" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2">REPLACE WITH YOUR PHOTO</text>
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="800" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1F1E9" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#9FB2AA" stop-opacity=".26"/>
+    </linearGradient>
+  </defs>
+</svg>
