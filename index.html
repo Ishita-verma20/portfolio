@@ -126,12 +126,6 @@
     .quality { padding: 7px 10px; border: 1px solid var(--line); color: #44505c; font-size: 10px; }
 
     .skills-section { background: var(--surface); }
-    .skill-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-    .skill-group { min-height: 146px; display: grid; grid-template-columns: 1fr; grid-template-areas: "title" "list"; align-content: start; gap: 14px 8px; padding: 21px 23px; background: var(--surface); }
-    .skill-group h3 { grid-area: title; align-self: center; margin: 0; font-size: 17px; }
-    .skill-list { grid-area: list; display: flex; flex-wrap: wrap; gap: 7px; }
-    .skill-list span { padding: 6px 9px; background: rgb(255 255 255 / 65%); color: #4c5965; font-size: 10px; }
-
     .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
     .project-card { min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--white); transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
     .project-card:hover { transform: translateY(-4px); border-color: #9abbb5; box-shadow: 0 17px 40px rgb(17 26 40 / 8%); }
@@ -203,9 +197,6 @@
     .leadership-card .mono { color: var(--teal); }
     .leadership-card h3 { margin: 12px 0 6px; font-size: 17px; }
     .leadership-card p { margin: 0; color: var(--muted); font-size: 12px; }
-    .achievement-row { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 20px; color: #54616d; font-size: 11px; }
-    .achievement-row span::before { margin-right: 7px; color: var(--rust); content: "—"; }
-
     .contact-section { padding: 86px 0; color: var(--white); background: #192535; }
     .contact-inner { display: flex; justify-content: space-between; align-items: end; gap: 32px; }
     .contact-section .section-kicker { color: #a5c9c4; }
@@ -262,8 +253,6 @@
       .about-aside { position: static; }
       .about-copy { grid-column: 1 / -1; }
       .about-grid > .photo-strip { grid-column: 1 / -1; }
-      .skill-grid { grid-template-columns: 1fr 1fr; }
-      .skill-group { min-height: 150px; padding: 17px; }
       .projects-grid { grid-template-columns: 1fr; gap: 16px; }
       .project-visual { min-height: 190px; }
       .research-card { grid-template-columns: 1fr; }
@@ -275,8 +264,6 @@
       .contact-actions .button { flex: 1; }
     }
     @media (max-width: 420px) {
-      .skill-grid { grid-template-columns: 1fr; }
-      .skill-group { min-height: 0; }
       .experience-item { grid-template-columns: 1fr; gap: 6px; }
       .project-topline { flex-direction: column; gap: 5px; }
       .contact-actions { flex-direction: column; }
@@ -443,20 +430,6 @@
     .skills-section .container { position: relative; z-index: 1; }
     .skills-section .section-kicker { color: var(--rust); }
     .skills-section .section-intro { color: #a4a8b5; }
-    .skill-grid { gap: 12px; }
-    .skill-group {
-      position: relative;
-      min-height: 118px;
-      padding: 19px 20px;
-      border: 0;
-      border-bottom: 1px solid #30303c;
-      border-left: 2px solid rgb(167 139 250 / 62%);
-      background: transparent;
-      box-shadow: none;
-    }
-    .skill-group .mono { color: var(--rust); }
-    .skill-group h3 { margin: 0; color: #e9e9f0; }
-    .skill-list span { padding: 2px 0; color: #bfc2ce; background: transparent; border: 0; }
     .projects-grid { gap: 20px; }
     .project-card {
       position: relative;
@@ -606,12 +579,9 @@
     .accuracy-bar { display: block; height: 3px; margin-top: 10px; background: #282934; }
     .accuracy-bar b { display: block; width: 85.32%; height: 100%; background: linear-gradient(90deg, var(--teal), #d0ff80); box-shadow: 0 0 8px rgb(182 255 59 / 40%); }
     .paper-note { border-top-color: #34303f; color: #a2a9b5; }
-    .experience-item, .leadership-card, .education-card, .skill-group { transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease, background-color .25s ease; }
+    .experience-item, .leadership-card, .education-card { transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease, background-color .25s ease; }
     .experience-item:hover { border-color: rgb(167 139 250 / 65%); }
     .leadership-card:hover, .education-card:hover { transform: translateY(-3px); border-color: rgb(167 139 250 / 54%); box-shadow: 5px 5px 0 rgb(167 139 250 / 24%), 0 0 24px rgb(167 139 250 / 13%); }
-    .skill-group:hover { z-index: 1; transform: translateX(4px); border-bottom-color: #494257; border-left-color: var(--teal); background: linear-gradient(90deg, rgb(167 139 250 / 7%), transparent 72%); box-shadow: none; }
-    .skill-list span { transition: color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
-    .skill-list span:hover { transform: translateY(-1px); color: #ded3ff; border-color: transparent; box-shadow: none; text-shadow: 0 0 13px rgb(167 139 250 / 40%); }
     .quality { transition: color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
     .quality:hover { transform: translateY(-2px); color: #ded3ff; border-color: rgb(167 139 250 / 65%); box-shadow: 0 0 14px rgb(167 139 250 / 18%); }
     .nav-links a, .contact-links a, .footer a { transition: color .2s ease, text-shadow .2s ease, box-shadow .2s ease; }
@@ -624,8 +594,6 @@
     .experience-item h3 { color: #e8eaf0; }
     .experience-item p, .leadership-card p { color: #a6acb7; }
     .leadership-card { border: 1px solid #292d38; background: #10131a; }
-    .achievement-row { color: #b6bbc5; }
-    .achievement-row span::before { color: var(--rust); }
     .contact-section { background: #10121a; border-top: 1px solid #2b2d39; }
     .contact-section .section-kicker, .contact-section h2 span { color: var(--teal); }
     .contact-section p { color: #aab0bb; }
@@ -643,15 +611,18 @@
     .photo-gallery { display: grid; grid-template-columns: 1.35fr .85fr .85fr; gap: 15px; }
     .photo-card { position: relative; min-width: 0; margin: 0; overflow: hidden; border: 1px solid #30303b; background: #10131a; transition: border-color .25s ease, transform .3s ease, box-shadow .3s ease; }
     .photo-card:hover, .photo-card.pointer-active { z-index: 2; transform: translateY(-4px); border-color: var(--rust); box-shadow: 0 14px 36px rgb(0 0 0 / 38%), 0 0 24px rgb(167 139 250 / 24%); }
-    .photo-card img { width: 100%; height: 280px; object-fit: cover; filter: grayscale(1) contrast(1.08); transition: filter .35s ease, transform .55s ease; }
+    .photo-card img { width: 100%; height: 280px; object-fit: cover; filter: grayscale(1) contrast(1.08); transition: filter .45s ease, transform .55s ease; }
     .photo-card-wide img { object-position: 70% center; }
     .photo-card:nth-child(2) img { object-position: center 55%; }
     .photo-card:nth-child(3) img { object-position: 78% center; }
-    .photo-card:hover img { filter: grayscale(1) contrast(1.14); transform: scale(1.035); }
+    .photo-card:nth-child(4) img { object-position: center 42%; }
+    .photo-card:nth-child(5) img { object-position: center 38%; }
+    .photo-card:nth-child(6) img { object-position: center 43%; }
+    .photo-card:hover img { filter: grayscale(0) saturate(1.08) contrast(1.04); transform: scale(1.045); }
     .photo-card figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 7px; padding: 11px 12px; color: #b8bdc7; font-size: 8px; letter-spacing: .09em; }
     .photo-card figcaption span:last-child { color: var(--teal); }
-    .skill-group, .leadership-card, .education-card, .research-visual { position: relative; isolation: isolate; overflow: hidden; }
-    .skill-group::before, .leadership-card::before, .education-card::before, .research-visual::before {
+    .leadership-card, .education-card, .research-visual { position: relative; isolation: isolate; overflow: hidden; }
+    .leadership-card::before, .education-card::before, .research-visual::before {
       position: absolute;
       z-index: 0;
       inset: 0;
@@ -661,9 +632,8 @@
       background: radial-gradient(200px circle at var(--hover-x, 50%) var(--hover-y, 50%), rgb(167 139 250 / 18%), transparent 75%);
       transition: opacity .25s ease;
     }
-    .skill-group > *, .leadership-card > *, .education-card > *, .research-visual > * { position: relative; z-index: 1; }
-    .skill-group.pointer-active::before, .leadership-card.pointer-active::before, .education-card.pointer-active::before, .research-visual.pointer-active::before { opacity: 1; }
-    .skill-group.pointer-active { border-left-color: var(--teal); }
+    .leadership-card > *, .education-card > *, .research-visual > * { position: relative; z-index: 1; }
+    .leadership-card.pointer-active::before, .education-card.pointer-active::before, .research-visual.pointer-active::before { opacity: 1; }
     .leadership-card.pointer-active, .education-card.pointer-active { border-color: rgb(167 139 250 / 60%); }
     .experience-item.pointer-active { box-shadow: inset 3px 0 rgb(167 139 250 / 75%); }
     .hero-data-visual.pointer-active { border-color: rgb(167 139 250 / 70%); box-shadow: 0 28px 76px rgb(0 0 0 / 38%), 8px 8px 0 rgb(167 139 250 / 38%), 0 0 46px rgb(167 139 250 / 24%); }
@@ -672,7 +642,7 @@
     .nav-links a.pointer-active, .contact-links a.pointer-active, .footer a.pointer-active { color: #d7c8ff; text-shadow: 0 0 15px rgb(167 139 250 / 55%); }
 
     @media (hover: hover) and (pointer: fine) {
-      .hero, .hero-data-visual, .project-card, .photo-card, .skill-group, .experience-item, .leadership-card, .education-card, .research-card, .research-visual { cursor: crosshair; }
+      .hero, .hero-data-visual, .project-card, .photo-card, .experience-item, .leadership-card, .education-card, .research-card, .research-visual { cursor: crosshair; }
     }
     @media (max-width: 700px) {
       .nav-links { background: #090b10; border-bottom-color: #282b36; }
@@ -700,7 +670,7 @@
     @media (hover: none), (pointer: coarse) {
       body::after { display: none; }
       .hero::before { display: none; }
-      .hero, .hero-data-visual, .project-card, .photo-card, .skill-group, .experience-item, .leadership-card, .education-card, .research-card, .research-visual { cursor: auto; }
+      .hero, .hero-data-visual, .project-card, .photo-card, .experience-item, .leadership-card, .education-card, .research-card, .research-visual { cursor: auto; }
     }
   </style>
 </head>
@@ -797,6 +767,18 @@
               <img src="assets/ishita-stage.jpeg" alt="Ishita celebrating a university project milestone." width="960" height="1280" loading="lazy">
               <figcaption><span>PROJECT MILESTONE</span><span>GALGOTIAS UNIVERSITY</span></figcaption>
             </figure>
+            <figure class="photo-card">
+              <img src="assets/ishita-campus-moment.jpeg" alt="Ishita taking a relaxed break at a university alumni space." width="853" height="1280" loading="lazy">
+              <figcaption><span>A CAMPUS PAUSE</span><span>OFF THE CLOCK</span></figcaption>
+            </figure>
+            <figure class="photo-card">
+              <img src="assets/ishita-graduation.jpeg" alt="Ishita holding her academic project at Galgotias University." width="960" height="1280" loading="lazy">
+              <figcaption><span>PROJECT COMPLETE</span><span>GALGOTIAS UNIVERSITY</span></figcaption>
+            </figure>
+            <figure class="photo-card">
+              <img src="assets/ishita-campus-portrait.jpeg" alt="Ishita enjoying a quiet moment on campus." width="960" height="1280" loading="lazy">
+              <figcaption><span>BETWEEN THE MILESTONES</span><span>CAMPUS LIFE</span></figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -808,13 +790,16 @@
           <div><p class="section-kicker mono">Skills &amp; technologies</p><h2>Tools for turning<br>questions into answers.</h2></div>
           <p class="section-intro">A focused toolkit grounded in the projects and research I’ve worked on.</p>
         </div>
-        <div class="skill-grid reveal">
-          <article class="skill-group"><h3>Programming</h3><div class="skill-list"><span>Python</span><span>JavaScript</span></div></article>
-          <article class="skill-group"><h3>Data analytics</h3><div class="skill-list"><span>Data analysis</span><span>Visualization</span><span>Time-series analysis</span><span>MAE</span><span>RMSE</span></div></article>
-          <article class="skill-group"><h3>Machine learning</h3><div class="skill-list"><span>LSTM</span><span>ARIMA</span><span>CNN</span><span>VGG16</span><span>ResNet50V2</span></div></article>
-          <article class="skill-group"><h3>Web development</h3><div class="skill-list"><span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span><span>Express</span></div></article>
-          <article class="skill-group"><h3>Databases</h3><div class="skill-list"><span>SQL</span><span>SQLite</span><span>MongoDB</span></div></article>
-          <article class="skill-group"><h3>Tools &amp; platforms</h3><div class="skill-list"><span>Git</span><span>GitHub</span><span>Google Colab</span><span>Yahoo Finance</span></div></article>
+        <div class="experience-layout reveal">
+          <p class="experience-intro">A practical toolkit built through analytics projects, research, internships, and application development.</p>
+          <div class="experience-list">
+            <article class="experience-item"><span class="experience-date mono">PROGRAMMING</span><div><h3>Programming</h3><p>Python · JavaScript</p></div></article>
+            <article class="experience-item"><span class="experience-date mono">ANALYTICS</span><div><h3>Data analytics</h3><p>Data analysis · Visualization · Time-series analysis · MAE · RMSE</p></div></article>
+            <article class="experience-item"><span class="experience-date mono">MODELING</span><div><h3>Machine learning</h3><p>LSTM · ARIMA · CNN · VGG16 · ResNet50V2</p></div></article>
+            <article class="experience-item"><span class="experience-date mono">DEVELOPMENT</span><div><h3>Web development</h3><p>HTML · CSS · React · Node.js · Express</p></div></article>
+            <article class="experience-item"><span class="experience-date mono">DATA SYSTEMS</span><div><h3>Databases</h3><p>SQL · SQLite · MongoDB</p></div></article>
+            <article class="experience-item"><span class="experience-date mono">WORKFLOW</span><div><h3>Tools &amp; platforms</h3><p>Git · GitHub · Google Colab · Yahoo Finance</p></div></article>
+          </div>
         </div>
       </div>
     </section>
@@ -999,13 +984,13 @@
             <article class="experience-item"><span class="experience-date mono">INTERNSHIP</span><div><h3>Web / Software Development Intern</h3><p>Prodigy Infotech</p></div></article>
             <article class="experience-item"><span class="experience-date mono">IN-OFFICE INTERNSHIP</span><div><h3>Python Programmer Intern</h3><p>UR DISTREE · Contributed to project development while working alongside a software engineer.</p></div></article>
             <article class="experience-item"><span class="experience-date mono">PROJECT EXPERIENCE</span><div><h3>Data Analytics &amp; Machine Learning</h3><p>Worked across data analysis and multiple machine-learning approaches, including LSTM and ARIMA forecasting and K-Means customer segmentation.</p></div></article>
+            <article class="experience-item"><span class="experience-date mono">CERTIFICATION</span><div><h3>Database Programming with SQL</h3><p>Oracle Academy</p></div></article>
           </div>
         </div>
         <div class="leadership reveal">
           <article class="leadership-card"><span class="mono">STUDENT LEADERSHIP</span><h3>President · Galgotias Tech Council</h3><p>Student coordination, communication, and community leadership.</p></article>
           <article class="leadership-card"><span class="mono">EVENT ORGANIZATION</span><h3>Organizer · IEEE CodeAstraa</h3><p>Helped organize a college hackathon, with experience in sponsorship outreach and student coordination.</p></article>
         </div>
-        <div class="achievement-row reveal"><span>Oracle Academy Database Programming with SQL certificate</span><span>180+ LeetCode problems solved</span><span>Smart India Hackathon participant · cleared 3 of 4 rounds</span><span>VIA corporate event coordinator</span></div>
       </div>
     </section>
 
@@ -1076,7 +1061,7 @@
       hero.addEventListener("pointerleave", () => hero.classList.remove("pointer-active"));
 
       document.querySelectorAll(
-        ".hero-data-visual, .photo-card, .skill-group, .experience-item, .leadership-card, .education-card, .research-card, .research-visual, .button, .nav-links a, .contact-links a, .footer a"
+        ".hero-data-visual, .photo-card, .experience-item, .leadership-card, .education-card, .research-card, .research-visual, .button, .nav-links a, .contact-links a, .footer a"
       ).forEach((element) => {
         element.addEventListener("pointermove", (event) => {
           const bounds = element.getBoundingClientRect();
